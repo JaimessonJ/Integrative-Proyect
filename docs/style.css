@@ -78,31 +78,13 @@ body {
             /*Estiloo para el formulario de registro*/
 
 
-/* Estilo base de la tarjeta */
-.formulario-cine {
-    background-color: #212529;
-    color: white;
-    padding: 30px;
-    border-radius: 8px;
-}
-
-/* 1. PSEUDOELEMENTO: Cambia el color del texto de guía dentro de las casillas */
-.formulario-cine input::placeholder {
-    color: #6c757d;
-}
-
-/* 2. PSEUDOCLASE: Ilumina el borde de la casilla cuando haces clic en ella */
-.formulario-cine input:focus {
-    border: 2px solid #ffc107;
-    outline: none;
-}
-
-/* 3. PSEUDOCLASE: Cambia el color del botón al pasar el mouse por encima */
+/* PSEUDOCLASE: Cambia el color del botón al pasar el mouse por encima */
 .btn-cine:hover {
     background-color: #dc3545;
-    color: white;
     cursor: pointer;
 }
+/*--------------------------------------*/
+
 
 /* 4. MEDIA QUERY: Se adapta a celulares (pantallas de 480px o menos) */
 @media screen and (max-width: 480px) {
