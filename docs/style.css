@@ -73,22 +73,4 @@ body {
 
 }
 
-
-
-            /*Estiloo para el formulario de registro*/
-
-
-/* PSEUDOCLASE: Cambia el color del botón al pasar el mouse por encima */
-.btn-cine:hover {
-    background-color: #dc3545;
-    cursor: pointer;
-}
 /*--------------------------------------*/
-
-
-/* 4. MEDIA QUERY: Se adapta a celulares (pantallas de 480px o menos) */
-@media screen and (max-width: 480px) {
-    .formulario-cine {
-        padding: 15px; /* Menos espacio en las esquinas para pantallas chicas */
-    }
-}
