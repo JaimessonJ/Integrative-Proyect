@@ -21,69 +21,35 @@ body {
 }
 
 .cartelera {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px 20px 20px;
     border: 5px solid black;
-      height: 450px;
-}
-
-
-.contenedor-movie1 {
-    width: 230px;
-    height: 300px;
-    background-color: red;
-    box-sizing: border-box; /* Si añadimos un margin, padding o un border en px, este hará parte del tamaño definido en width y height*/
-    position: absolute;
-    left: 100px;
-    top: 100px;
 }
 
 .contenedor-movie1 img {
-    width: 180px;
-    height: 190px;
-    margin: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.contenedor-movie2 {
-    width: 230px;
-    height: 300px;
-    background-color: red;
-    position: absolute;
-    top: 100px;
-    left: 390px;
-}
 
 .contenedor-movie2 img {
-    width: 180px;
-    height: 190px;
-    margin: 20px;
-}
-
-.contenedor-movie3 {
-    width: 230px;
-    height: 300px;
-    background-color: red;
-    position: absolute;
-    top: 100px;
-    left: 700px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .contenedor-movie3 img {
-    width: 180px;
-    height: 190px;
-    margin: 20px;
-}
-
-.contenedor-movie4 {
-    width: 230px;
-    height: 300px;
-    background-color: red;
-    position: absolute; /* Nos deja moverlo de su posición con: top, right, bottom y left con respecto a su contenedor (position-relative) sin afectar el margin*/
-    top: 100px;
-    left: 1000px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .contenedor-movie4 img {
-    width: 180px;
-    height: 190px;
-    margin: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
