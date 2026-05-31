@@ -1,23 +1,38 @@
 body {
-    background-color: gray;
+    background-color: red;
     margin: 0;
     font-family: 'Open sans', sans-serif;
 }
 
-.nav-bar {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: center; /* Centra el contenido */  
-    width: 100vw;
-    position: fixed; /* Deja la barra de navegación pegada en un punto a la pantalla */
-    z-index: 2; /* Nos ayuda a solucionar el problema de apilamiento de los contenedores */
+                                    /*Pseudoclases*/
+
+/* Cambia el color de los textos del menú al pasar el mouse */
+.navbar-nav .nav-link:hover {
+    color: red !important; /* Un tono amarillo dorado tipo cine */
+    text-decoration: underline;
 }
 
-.nav-bar a {
-    background-color: black;
-    color: white;    
+                /*-------------------------------------------*/
+
+/* Este seleciona la tarjeta cuando el cursor está sobre ella */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta un poco*/
+    box-shadow: 0 10px 20px black; /* Añade una sombra profunda */
+    cursor: pointer;
+}
+
+                /*-------------------------------------------*/
+
+                                 /*Pseudoelementos*/
+
+/* Cambia el fondo y el color del texto cuando el usuario lo selecciona */
+::selection {
+    background-color: red; /* Fondo rojo de estreno */
+    color: white; /* Texto blanco para que contraste */
 }
 
 .cartelera {
@@ -29,27 +44,31 @@ body {
     border: 5px solid black;
 }
 
-.contenedor-movie1 img {
-    width: 100%;
-    height: auto;
-    display: block;
+
+/* Media queries para responsividad */
+
+/* Celulares */
+@media screen and (max-width: 480px) {
+
+    .cartelera {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
 
-.contenedor-movie2 img {
-    width: 100%;
-    height: auto;
-    display: block;
+
 }
 
-.contenedor-movie3 img {
-    width: 100%;
-    height: auto;
-    display: block;
+/* Laptop */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
 }
 
-.contenedor-movie4 img {
-    width: 100%;
-    height: auto;
-    display: block;
+/* Pantallas grandes */
+@media screen and (min-width: 1201px) {
+
 }
