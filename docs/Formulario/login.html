@@ -59,31 +59,22 @@
             <div class="col-12 col-md-6">
                 
                 <div class="formulario-cine">
-                    <h2>Crear Cuenta</h2>
-                    <p class="subtitulo">Únete al club y recibe preventas exclusivas.</p>
+                    <h2>Ingresar</h2>
+                    <p class="subtitulo">Entra al club y recibe preventas exclusivas.</p>
                     
-                    <form action="#">
+                    <form action id="formularioLogin">
                         <div class="grupo-input" style="margin-bottom: 15px;">
-                            <label for="nombre" style="display:block; margin-bottom:5px;">Nombre Completo</label>
+                            <label for="nombre" style="display:block; margin-bottom:5px;">Usuario</label>
                             <input type="text" id="nombre" placeholder="Ej. Juan Pérez" required style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
                         </div>
 
-                        <div class="grupo-input" style="margin-bottom: 15px;">
-                            <label for="correo" style="display:block; margin-bottom:5px;">Correo Electrónico</label>
-                            <input type="email" id="correo" placeholder="nombre@correo.com" required style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
-                        </div>
 
                         <div class="grupo-input" style="margin-bottom: 15px;">
                             <label for="password" style="display:block; margin-bottom:5px;">Contraseña</label>
-                            <input type="password" id="password" placeholder="Mínimo 8 caracteres" required style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+                            <input type="password" id="password" placeholder="Ej. 1234" required style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
                         </div>
 
-                        <div class="grupo-terminos" style="margin-bottom: 20px;">
-                            <input type="checkbox" id="terminos" required>
-                            <label for="terminos">Acepto los términos y condiciones.</label>
-                        </div>
-
-                        <button type="submit" class="btn-cine" style="width: 100%; padding: 10px; font-weight: bold; border-radius: 5px; border: none;">Registrarme</button>
+                        <button type="submit" class="btn-cine" style="width: 100%; padding: 10px; font-weight: bold; border-radius: 5px; border: none;">Iniciar Sesión</button>
                     </form>
                 </div>
 
@@ -99,5 +90,6 @@
         </div>
     </footer>
 </main>
+<script src="loginform.js"></script>
 </body>
 </html>

@@ -6,9 +6,9 @@ body {
 
                                     /*Pseudoclases*/
 
-/* Cambia el color de los textos del menú al pasar el mouse */
+
 .navbar-nav .nav-link:hover {
-    color: red !important; /* Un tono amarillo dorado tipo cine */
+    color: red !important; 
     text-decoration: underline;
 }
 
